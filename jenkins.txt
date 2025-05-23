@@ -13,3 +13,7 @@ post{
 }
 
 "npx cypress run --browser ${BROWSER} --spec ${SPEC}"
+
+cypress/e2e/2-advanced-examples/actions.cy.js - ok
+
+cypress/e2e/1-getting-started/todo.cy.js - failure
