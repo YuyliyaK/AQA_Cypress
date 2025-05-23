@@ -16,9 +16,7 @@ pipeline{
         stage('Testing'){
             steps{
                 bat "npm i"
-                bat "npm install --save-dev mocha-allure-reporter allure-commandline"
-                bat "npm run browser:chrome"
-                bat "npm run report:allure  "
+                bat "npx cypress run --browser ${BROWSER} --spec ${SPEC}"
             }
         }
         stage('Deploing'){
