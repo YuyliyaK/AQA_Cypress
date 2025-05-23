@@ -2,7 +2,7 @@ pipeline{
     agent any
 
     parameters{
-        string(name: 'SPEC', defaultValue: "cypress/e2e/**/**/*", description: "Enter the script")
+        string(name: 'SPEC', defaultValue: "cypress/e2e/1-getting-started/todo.cy.js", description: "Enter the script")
         choice(name: 'BROWSER', choices: ['chrome','edge','firefox'], description: "Choice the browser")
     }
 
