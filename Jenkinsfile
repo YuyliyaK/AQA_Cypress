@@ -16,7 +16,9 @@ pipeline{
         stage('Testing'){
             steps{
                 bat "npm i"
-                bat "npx cypress run --browser ${BROWSER} --spec ${SPEC}"
+                bat "npm install --save-dev mocha-allure-reporter allure-commandline"
+                bat "npm run browser:chrome"
+                bat "npm run report:allure  "
             }
         }
         stage('Deploing'){
@@ -25,10 +27,6 @@ pipeline{
             }
         }
     }
-    post{
-        always{
-            publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'cypress/report', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: ''])
-        }
-}
+    
 }
 
