@@ -18,6 +18,14 @@ pipeline{
                 bat "npm ci"
                 bat "npx cypress run --browser ${BROWSER} --spec ${SPEC}"
             }
+            post {
+                always {
+                    allure includeProperties:
+                     false,
+                     jdk: '',
+                     results: [[path: 'build/allure-results']]
+                }
+            }
         }
         stage('Deploing'){
             steps{
