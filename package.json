@@ -1,0 +1,33 @@
+{
+  "name": "aqa_cypress",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "browser:chrome": "npx cypress run --browser=chrome --headed --spec cypress/e2e/1-getting-started/todo.cy.js --reporter mocha-allure-reporter",
+    "report:allure": "allure generate allure-results --clean -o allure-report && allure open  allure-report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YuyliyaK/AQA_Cypress.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/YuyliyaK/AQA_Cypress/issues"
+  },
+  "homepage": "https://github.com/YuyliyaK/AQA_Cypress#readme",
+  "description": "",
+  "dependencies": {
+    "cypress-plugin-api": "^2.11.2"
+  },
+  "devDependencies": {
+    "allure-commandline": "^2.34.0",
+    "allure-cypress": "^3.2.2",
+    "mocha-allure-reporter": "^1.4.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.4.1",
+    "mochawesome-report-generator": "^6.2.0"
+  }
+}

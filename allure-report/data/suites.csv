@@ -1,0 +1,8 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","4539","can filter for uncompleted tasks","","Fri May 23 04:49:40 MSK 2025","failed","Fri May 23 04:49:44 MSK 2025","","example to-do app with a checked task","example to-do app with a checked task","can filter for uncompleted tasks"
+"","335","can delete all completed tasks","","Fri May 23 04:49:44 MSK 2025","passed","Fri May 23 04:49:45 MSK 2025","","example to-do app with a checked task","example to-do app with a checked task","can delete all completed tasks"
+"","0","""after all"" hook: __allure_report_system_hook__ for ""can delete all completed tasks""","","Fri May 23 04:44:04 MSK 2025","broken","Fri May 23 04:44:04 MSK 2025","","","","""after all"" hook: __allure_report_system_hook__ for ""can delete all completed tasks"""
+"","-1747964980037","can check off an item as completed","","Fri May 23 04:49:40 MSK 2025","unknown","Thu Jan 01 03:00:00 MSK 1970","","example to-do app","example to-do app","can check off an item as completed"
+"","2451","displays two todo items by default","","Fri May 23 04:49:37 MSK 2025","passed","Fri May 23 04:49:39 MSK 2025","","example to-do app","example to-do app","displays two todo items by default"
+"","313","can filter for completed tasks","","Fri May 23 04:49:44 MSK 2025","passed","Fri May 23 04:49:44 MSK 2025","","example to-do app with a checked task","example to-do app with a checked task","can filter for completed tasks"
+"","480","can add new todo items","","Fri May 23 04:49:39 MSK 2025","passed","Fri May 23 04:49:40 MSK 2025","","example to-do app","example to-do app","can add new todo items"

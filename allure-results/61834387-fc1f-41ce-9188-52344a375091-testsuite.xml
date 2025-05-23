@@ -1,0 +1,36 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1747964980037' stop='1747964985275'>
+    <name>example to-do app with a checked task</name>
+    <title>example to-do app with a checked task</title>
+    <test-cases>
+        <test-case start='1747964980040' status='failed' stop='1747964984579'>
+            <name>can filter for uncompleted tasks</name>
+            <title>can filter for uncompleted tasks</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Timed out retrying after 4000ms: expected '&lt;li>' to have text 'Walk dog', but the text was 'Walk the dog'</message>
+                <stack-trace>AssertionError: Timed out retrying after 4000ms: expected '&lt;li>' to have text 'Walk dog', but the text was 'Walk the dog'
+                    at Context.eval (webpack://aqa_cypress/./cypress/e2e/1-getting-started/todo.cy.js:104:9)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1747964984616' status='passed' stop='1747964984929'>
+            <name>can filter for completed tasks</name>
+            <title>can filter for completed tasks</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1747964984940' status='passed' stop='1747964985275'>
+            <name>can delete all completed tasks</name>
+            <title>can delete all completed tasks</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
